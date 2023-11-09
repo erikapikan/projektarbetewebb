@@ -188,19 +188,33 @@ header {
 .boxes-container {
     display: flex;
     justify-content: space-around;
+    align-items: stretch;
 }
 
 .box {
-    width: 300px; /* Justera bredden efter behov */
-    padding: 10px;
-    margin: 70px;
+    flex: 0.7;
+    background-color: #f0f0f0;
+    border: 3px solid #ddd;
+    border-radius: 7px;
+    padding: 2px;
+    margin: 50px;
     text-align: center;
-    background-color: #ffffff !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    transition: transform 0.2s;
+    box-sizing: border-box; /* Lägg till denna egenskap för att inkludera padding och border i boxens totala storlek */
 }
+
+.box a {
+    text-decoration: none;
+    color: #333;
+}
+
+.box h2 {
+    color: #856868;
+}
+
+.box p {
+    margin-bottom: 10px;
+}
+
 
 .box:hover {
     cursor: pointer;
