@@ -192,8 +192,8 @@ header {
 
 .box {
     width: 300px; /* Justera bredden efter behov */
-    padding: 20px;
-    margin: 60px;
+    padding: 10px;
+    margin: 70px;
     text-align: center;
     background-color: #ffffff !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
