@@ -1,0 +1,329 @@
+/* Grundläggande stil (för desktop) */
+body {
+    font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+    background-color: rgb(255, 255, 255);
+    color: #0b0a0a;
+    margin: 0;
+    padding: 0;
+    height: 700px;
+}
+
+/* Header och meny */
+header {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    background-color: transparent;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    color: #333; /* Färg på huvudmenyn */
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: #1d1c1c;
+    border-radius: 40px;
+    padding: 15px;
+    font-size: large;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333; /* Färg på huvudmenyn */
+}
+
+.menu a:hover {
+    background-color: rgba(19, 19, 19, 0.335);
+    color: #4f4f4f;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    min-width: 200px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    font-size: 16px; /* Storlek för undermenyn */
+    color: #333; /* Färg på undermenyn */
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5; /* Bakgrundsfärg på undermenyn vid hover */
+    color: #555; /* Färg på undermenyn vid hover */
+}
+
+/* Stil för sökfältet */
+.search-container {
+    float: right; /* Placera längst upp till höger */
+    margin-top: 10px; /* Justera avståndet från menyraden */
+}
+
+#search-bar {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #555;
+}
+
+/* Divider (linje) */
+.divider {
+    height: 3px;
+    background-color: rgba(9, 9, 9, 0.335);
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* Hero-sektion */
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: #faf6f6;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #b78989;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Content-sektion */
+.content {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(170, 166, 166);
+    color: rgb(12, 12, 12);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: auto;
+}
+.content h2 {
+    font-size: 24px; /* Anpassa textens storlek efter behov */
+}
+.content p {
+    font-size: 16px; /* Anpassa textens storlek efter behov */
+    line-height: 1.5; /* Anpassa radhöjden efter behov */
+}
+
+.content img {
+    max-width: 100%; /* Begränsar bildens bredd till förälderelementets bredd */
+    height: auto; /* Säkerställer att bildens höjd justeras automatiskt */
+}
+
+/* Container och layout */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 300px; /* Justera bredden efter behov */
+    padding: 20px;
+    margin: 60px;
+    text-align: center;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+a {
+    display:inline;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(121, 112, 112);
+    color: #111111fc;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.subscribe {
+    flex: 1;
+    text-align: left;
+}
+
+subscribe h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+subscribe p {
+    margin: 5px 0;
+}
+
+subscribe form {
+    display: flex;
+}
+
+subscribe input[type="email"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #534d4d;
+}
+
+subscribe button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+subscribe button:hover {
+    background-color: #555;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+social-media a {
+    text-decoration: none;
+    color: #fff;
+}
+
+copyright {
+    margin-top: 20px;
+}
+
+/* Övriga stilinställningar */
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: floralwhite;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-color: rgb(255, 254, 254);
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 6px;
+    color: rgb(21, 21, 21);
+    margin: auto;
+}
+
+
+a:hover {
+    background-color: rgba(201, 188, 188, 0);
+}
+
+.myframe {
+    width: 100vw;
+    height: 70vh;
+}
+
+/* Mediaförfrågningar för att göra sidan responsiv */
+@media (max-width: 768px) {
+    /* Ändra stilen för mindre skärmar här */
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+}

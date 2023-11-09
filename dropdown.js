@@ -1,0 +1,15 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Här placeras din befintliga JavaScript-kod för dropdown-menyer
+    // Exempel:
+    var dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(function(dropdown) {
+        dropdown.addEventListener('mouseover', function() {
+            this.querySelector('.dropdown-content').style.display = 'block';
+        });
+
+        dropdown.addEventListener('mouseout', function() {
+            this.querySelector('.dropdown-content').style.display = 'none';
+        });
+    });
+});
