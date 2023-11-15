@@ -12,12 +12,12 @@
 </script>
 
     <meta charset="UTF-8">
-    <meta name="description" content="utforska konstnärliga tavlor, få tips om tekniker och inspiration">
-    <meta name="keywords" content="konst, galleri, inspiration, tekniker, kontakt, utställningar,konstbyerika">
+    <meta name="description" content="Utforska konstnärliga tavlor, information om tavelserier">
+    <meta name="keywords" content="konst, galleri, inspiration, tavlor, vernissage, konstbyerika">
     <meta name="author" content="Erika Nilsson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Galleri</title>
+    <title>GALLERI</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
 </head>
@@ -29,104 +29,101 @@
                     <a href="index.html">Startsida</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Galleri</a>
+                    <a href="galleri.html">Galleri</a>
                     <ul class="dropdown-content">
-                        <li><a href="galleriserier.html">Serier</a></li>
-                        <li><a href="galleriutstallningar.html">Utställningar</a></li>
+                        <li><a href="tavelserier.html">Tavelserier</a></li>
+                        <li><a href="vernissage.html">Vernissage</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Inspiration</a>
+                    <a href="inspiration.html">Inspiration</a>
                     <ul class="dropdown-content">
-                        <li><a href="inspiratorer.html">Inspiratörer</a></li>
-                        <li><a href="minkonstresa.html">Min konst resa</a></li>
+                        <li><a href="borjamala.html">Börja måla!</a></li>
+                        <li><a href="https://erijcaa.wordpress.com/">Boka onlinekurs</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Tekniker</a>
-                    <ul class="dropdown-content">
-                        <li><a href="akryl.html">Akryltekniker</a></li>
-                        <li><a href="skulpturtekniker.html">Skulpturtekniker</a></li>
-                        <li><a href="malarverktyg.html">Målarverktyg</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Kontakt</a>
+                    <a href="kontakt.html">Kontakt</a>
                     <ul class="dropdown-content">
                         <li><a href="kontaktformular.html">Kontaktformulär</a></li>
-                        <li><a href="socialamedier.html">Sociala medier</a></li>
+                        <li><a href="ommig.html">Om mig</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
-    </header>
-
-    <div class="divider"></div>
-
-    <div class="hero container">
-        <section id="hero">
-            <img src="images/nylogotyp1.png" width="930" height="420">
-        </section>
-    </div>
-
-    <section>
-        <div class="divider"></div>
-        <p>Hej och välkommen till serier</p>
-        <!-- Här lägger du till innehållet för serier-sidan -->
-    </section>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var dropdowns = document.querySelectorAll(".dropdown");
+            document.addEventListener("DOMContentLoaded", function () {
+                var dropdowns = document.querySelectorAll(".dropdown");
 
-            dropdowns.forEach(function (dropdown) {
-                dropdown.addEventListener("mouseenter", function () {
-                    this.querySelector(".dropdown-content").classList.add("show");
-                });
+                dropdowns.forEach(function (dropdown) {
+                    dropdown.addEventListener("mouseenter", function () {
+                        var dropdownContent = dropdown.querySelector(".dropdown-content");
+                        dropdownContent.classList.add("show");
+                    });
 
-                dropdown.addEventListener("mouseleave", function () {
-                    this.querySelector(".dropdown-content").classList.remove("show");
+                    dropdown.addEventListener("mouseleave", function () {
+                        var dropdownContent = dropdown.querySelector(".dropdown-content");
+                        dropdownContent.classList.remove("show");
+                    });
                 });
             });
-        });
-    </script>
-        
-    <section>
-        <div class="content">
-            <h2>Välkommen till Galleri</h2>
-            <p>Det här är en introduktionstext som kan vara längre och innehålla information om ämnet.</p>
-            <img src="content-image.jpg" alt="Content Image">
-        </div>
-    </section></body> 
+        </script>
+    </header>
+    <script src="dropdown.js"></script>
+    
+    <div class="divider"></div>
+
+    </br><br>
+        <div class="header">
+            <header id="hero">
+                <img src="images/nylogotyp1.png" width="180" height="70">
+            </header>
+        </div>     
+    </br><br>
+    
+    <section class="content">
+        <h1>Välkommen till Galleri</h1>
+        <h3>När jag inledde min resa inom måleri, utforskade jag en rad olika färger och tekniker utan en bestämd vision för det slutgiltiga resultatet. För att strukturera min konstnärliga process och för att kunna särskilja och dokumentera de skiftande teknikerna, valde jag att namnge mina konstverk enligt olika serier. Detta tillvägagångssätt möjliggjorde en mer systematisk utforskning av liknande teman och tekniker inom min konstnärliga skapande.</h3>
+        </br><br></br><br>
+        <h3>Hitta mina tavlerserier i undermenyn!</h3>
+    <img src="images/bildgalleri.png" alt="Content Image"width="1485" height="1000">  
+    </section>
 
 
     <footer>
-        <div class="container">
-            <div class="sec quicklinks">
-                <h2>Rubrik</h2>
-                <p>Text</p>
-            </div>
-            <div class="sec quicklinks"></div>
-            <div class="sec quicklinks"></div>
-            <div class="sec quicklinks"></div>
-            <div class="social-media">
-                <div class="copyright">&copy; KONSTBYERIKA</div>
-                <a href="https://www.instagram.com/konstbyerika/" target="_blank">
-                    <img src="images/instagramicon.png" alt="Instagram">
-                </a>
-            </div>
-            <div class="footer-content">
-                <div class="contact-info">
-                    <h5>Börja prenumerera på nyhetsbrev!</h5>
-                    <h6>Skriv in din e-postadress nedan!</h6>
-                    <form action="your_subscription_script.php" method="post">
-                        <input type="email" name="email" placeholder="Din e-postadress" required>
-                        <button type="submit">Prenumerera</button>
-                    </form>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sociala medier</h2>
+                <div class="follow">
+                    <h4>KONSTBYERIKA</h4>
+                    <div class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
                 </div>
             </div>
+            <div class="footer-section links">
+                <h2>Snabblänkar</h2>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="galleri.html">Galleri</a></li>
+                    <li><a href="https://erijcaa.wordpress.com/">Onlinekurser</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Kontakt</h2>
+                <li><a href="kontaktformular.html">Kontaktformulär</a></li>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 KONSTBYERIKA. Alla rättigheter förbehållna.</p>
         </div>
     </footer>
-   
 </body>
 </html>

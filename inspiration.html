@@ -12,13 +12,14 @@
 </script>
 
     <meta charset="UTF-8">
-    <meta name="description" content="Få inspiration och information om olika målar tekniker i akrylfärg">
-    <meta name="keywords" content="konst, galleri, inspiration, tekniker, material, konstbyerika">
+    <meta name="description" content="Få information att hitta inspiration till att börja måla och skapa tavlor">
+    <meta name="keywords" content="inspiration, tavlor, musik, årstider, sociala medier">
     <meta name="author" content="Erika Nilsson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Inspiration</title>
+    <title>INSPIRATION</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
 <body>
     <header>
@@ -28,66 +29,115 @@
                     <a href="index.html">Startsida</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Galleri</a>
+                    <a href="galleri.html">Galleri</a>
                     <ul class="dropdown-content">
-                        <li><a href="galleriserier.html">Serier</a></li>
-                        <li><a href="galleriutstallningar.html">Utställningar</a></li>
+                        <li><a href="tavelserier.html">Tavelserier</a></li>
+                        <li><a href="vernissage.html">Vernissage</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Inspiration</a>
+                    <a href="inspiration.html">Inspiration</a>
                     <ul class="dropdown-content">
-                        <li><a href="inspiratorer.html">Inspiratörer</a></li>
-                        <li><a href="minkonstresa.html">Min konst resa</a></li>
+                        <li><a href="borjamala.html">Börja måla!</a></li>
+                        <li><a href="https://erijcaa.wordpress.com/">Boka onlinekurs</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Tekniker</a>
-                    <ul class="dropdown-content">
-                        <li><a href="akryl.html">Akryltekniker</a></li>
-                        <li><a href="skulpturtekniker.html">Skulpturtekniker</a></li>
-                        <li><a href="malarverktyg.html">Målarverktyg</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Kontakt</a>
+                    <a href="kontakt.html">Kontakt</a>
                     <ul class="dropdown-content">
                         <li><a href="kontaktformular.html">Kontaktformulär</a></li>
-                        <li><a href="socialamedier.html">Sociala medier</a></li>
+                        <li><a href="ommig.html">Om mig</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
+
+    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var dropdowns = document.querySelectorAll(".dropdown");
+
+                dropdowns.forEach(function (dropdown) {
+                    dropdown.addEventListener("mouseenter", function () {
+                        var dropdownContent = dropdown.querySelector(".dropdown-content");
+                        dropdownContent.classList.add("show");
+                    });
+
+                    dropdown.addEventListener("mouseleave", function () {
+                        var dropdownContent = dropdown.querySelector(".dropdown-content");
+                        dropdownContent.classList.remove("show");
+                    });
+                });
+            });
+        </script>
     </header>
 
     <div class="divider"></div>
 
-    <div class="hero container">
-        <section id="hero">
-            <img src="images/nylogotyp1.png" width="930" height="420">
-        </section>
-    </div>
-
-    <section>
-        <div class="divider"></div>
-        <p>Hej och välkommen till inspiration</p>
-        <!-- Här lägger du till innehållet för serier-sidan -->
+    </br><br>
+        <div class="header">
+            <header id="hero">
+                <img src="images/nylogotyp1.png" width="180" height="70">
+            </header>
+        </div>     
+    </br><br>
+    
+    <section class="content">
+    <h1>Hitta din inspiration</h1>
+    <h3>Inspiration är avgörande för mig när det kommer till måleri. Utan den rätta gnistan kan det vara utmanande att förvandla idéer till konst på canvasduken. Mina tavelserier har inte bara erbjudit mig en försmak av måleriets värld utan även öppnat upp möjligheter att utforska olika material som akrylfärg, lera och skulpturmaterial.</h3>
+    </br><br></br><br>
+    <h3>Tre sätt som kan bidra till att hitta insiration!</h3>
     </section>
+    <section class="content2">
+        <div class="transparent-text-frame">
+        <h1>Musik</h1>
+        <h4>Musik kan fungera som en bakgrundskuliss som leder till att man får mer känsla för att skapa något. Enligt min åsikt är musik ett måste när jag målar. Musik kan hjälpa till att matcha den känsla du vill förmedla med din konst, vilket även kan stärka kreativiteten. Skapa en spellista med musik som väcker inspirationen för att skapa ett verk!</h4>
+    </div>
+        <div class="transparent-text-frame">
+        <h1>Årstider och miljö</h1>
+        <h4>Vårt avlånga land har varierande årstider, vilket har sina för- och nackdelar beroende på preferenser. Våren och sommaren ger inspiration att vara utomhus och utforska platser för kommande målarverk. Även under höst och vinter, när det blir kallt utomhus och tid spenderas inomhus, kan inspirationen flöda.</h4>
+    </div>
+    <div class="transparent-text-frame">
+        <h1>Sociala medier</h1>
+        <h4>På sociala medier finns det idag många skaparkonton där du kan samla inspiration kring mönster, former och tekniker. Det är viktigt att inte kopiera någons exakta stil, utan samla egna idéer och känslor. Se över vilka material, färger och verktyg som används, börja sedan planera för ditt eget skapande.</h4>
+    </div>
+</section>
+        <img src="images/bildinspiration.png" alt="Content Image"width="1485" height="1000">
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var dropdowns = document.querySelectorAll(".dropdown");
+</section>
 
-            dropdowns.forEach(function (dropdown) {
-                dropdown.addEventListener("mouseenter", function () {
-                    this.querySelector(".dropdown-content").classList.add("show");
-                });
-
-                dropdown.addEventListener("mouseleave", function () {
-                    this.querySelector(".dropdown-content").classList.remove("show");
-                });
-            });
-        });
-    </script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sociala medier</h2>
+                <div class="follow">
+                    <h4>KONSTBYERIKA</h4>
+                    <div class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Snabblänkar</h2>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="galleri.html">Galleri</a></li>
+                    <li><a href="https://erijcaa.wordpress.com/">Onlinekurser</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Kontakt</h2>
+                <li><a href="kontaktformular.html">Kontaktformulär</a></li>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 KONSTBYERIKA. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
 </body>
 </html>
