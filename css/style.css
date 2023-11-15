@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     height: 700px;
+    max-width: 100%;
 }
 
 .text-frame {
@@ -25,9 +26,9 @@ body {
     padding-top: 20px;
     padding: 20px;
     padding-bottom: 40px;
-    width: 390px;
-    color: #fff; /* Textfärg inuti ramen */
+    max-width: 350px;
     margin: auto;
+    color: #fff; /* Textfärg inuti ramen */
   }
 
   .transparent-text-frame2 {
@@ -40,11 +41,34 @@ body {
     margin: auto;
   }
 
+/* Bildnummer och text till bilder i tavelserier */
+  .numbertext {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Justera storleken efter behov */
+    color: rgb(20, 19, 19); /* Justera textfärgen efter behov */
+    z-index: 2; /* Se till att numbertext är ovanpå bilden */
+  }
+
+  .text {
+    position: absolute;
+    bottom: -30px; /* Justera avståndet från botten efter behov */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px; /* Justera storleken efter behov */
+    color: rgb(12, 12, 12); /* Justera textfärgen efter behov */
+    z-index: 2; /* Se till att text är ovanpå bildspelet */
+}
+
+
 /* Header och meny */
 header {
     background-color: white;
     padding: 30px 0;
     text-align: center;
+    max-width: 100%;
 }
 
 .menu {
@@ -53,6 +77,7 @@ header {
     list-style: none;
     text-align: center;
     background-color: transparent;
+    max-width: 100%;
 }
 
 .menu ul {
@@ -160,6 +185,7 @@ header {
     font-size: 5px;
     line-height: 1.3;
     margin: auto;
+    max-width: 100%;
 }
 
 .content2 {
@@ -174,6 +200,7 @@ header {
     font-size: 20px;
     line-height: 1.3;
     margin: auto;
+    max-width: 100%;
 }
 
 .content h1 {
@@ -239,7 +266,8 @@ header {
 section {
     background-color: rgba(208, 202, 202, 0.764); /* Anpassa efter önskad färg */
     padding: 20px; /* Lägg till utrymme runt innehållet om så önskas */
-    /* Lägg till andra egenskaper för sektionen efter behov */
+    max-width: 100%;
+   
   }
 
 /*bild spel i tavelserier*/
@@ -296,9 +324,18 @@ section {
     transition: background-color 0.6s ease, color 0.6s ease;
 }
 
+.slideshow-container zehn {
+    background-color:rgba(208, 202, 202, 0.764);
+}
 
+.slideshow-container creme {
+    background-color:rgba(208, 202, 202, 0.764);
+}
+.slideshow-container structure {
+    background-color:rgba(208, 202, 202, 0.764);
+}
 
-/* Container och layout */
+/* Container och boxar */
 
 .container {
     display: flex;
@@ -306,6 +343,9 @@ section {
     justify-content: center;
     align-items: center;
     background-color: rgba(208, 202, 202, 0.764);
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 
@@ -434,6 +474,7 @@ footer {
     background-color:rgb(170, 166, 166);
     padding: 20px;
     text-align: center;
+    max-width: 100%;
 }
 
 
@@ -446,6 +487,7 @@ footer {
 .footer-section {
     flex: 1;
     margin-right: 20px;
+    max-width: 100%;
 }
 
 .footer-section h2 {
