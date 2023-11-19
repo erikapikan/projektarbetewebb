@@ -488,6 +488,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-section {
